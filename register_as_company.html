@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restavratsia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="reg-comp-body">
+    <header class="d-flex-spacebtw">
+        <div class="col-3">
+            <a href="landing_page.html"><img src="css/images/logo_transparent_2.png" id="logo"></a>
+        </div>
+        <nav class="menu flex-end-center col-9" >
+            <a id="login-as-company-button" class="menu-link" href="login_as_company.html">Login as company</a>
+            <a id="login-as-user-button" class="menu-link" href="login_as_user.html">Login as User</a>
+            <a id="register-as-user-button" class="menu-link" href="register_as_user.html">Register as User</a>
+        </nav>
+    </header>
+    <section id="reg-company-sec" class="section">
+        <div id="reg-company-div" class="container col-9 flex-center">
+            <div id="reg-div-3-left" class="col-4">
+                <fieldset>
+                    <legend><span class="number">1</span> Account info</legend>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Login</p>
+                        <input type="text" class="input-field" placeholder="Enter your login">
+                    </div>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Password</p>
+                        <input type="text" class="input-field" placeholder="Enter your password">
+                    </div>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Confirm password</p>
+                        <input type="text" class="input-field" placeholder="Confirm your password">
+                    </div>
+                </fieldset>
+            </div>
+            <div id="reg-div-3-center" class="col-4">
+                <fieldset>
+                    <legend><span class="number">2</span>Your profile</legend>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Name</p>
+                        <input type="text" class="input-field" placeholder="Enter your name">
+                    </div>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Email</p>
+                        <input type="text" class="input-field" placeholder="Enter your email">
+                    </div>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Phone number</p>
+                        <input type="text" class="input-field" placeholder="Enter your phone number">
+                    </div>
+                </fieldset>
+            </div>
+            <div id="reg-div-3-right" class="col-4">
+                <fieldset>
+                    <legend><span class="number">3</span>Address</legend>
+
+                    <div class="input-select flex-center">
+                        <p class="text-form text">City</p>
+                        <select type="text" class="input-field" name="user-city">
+                            <optgroup label="Ukraine">
+                                <option value="kyiv">Kyiv</option>
+                                <option value="lviv">Lviv</option>
+                                <option value="kharkiv">Kharkiv</option>
+                                <option value="dnipro">Dnipro</option>
+                                <option value="kherson">Kherson</option>
+                                <option value="chaernihiv">Chernihiv</option>
+                            </optgroup>
+                            <optgroup label="Poland">
+                                <option value="warsaw">Warsaw</option>
+                                <option value="lunlin">Lublin</option>
+                                <option value="rzeszow">Rzeszow</option>
+                            </optgroup>
+                            <optgroup label="Belarus">
+                                <option value="minsk">Minsk</option>
+                                <option value="brest">Brest</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="input-text flex-center">
+                        <p class="text-form text">Surname</p>
+                        <input type="text" class="input-field" placeholder="Enter your surname">
+                    </div>
+
+                    <div class="input-select flex-center">
+                        <p class="text-form text">Gender</p>
+                        <select type="text" class="input-field" name="user-city">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div id="reg-btn" class="col-12 flex-center">
+            <div id="reg-btn-confirm" class="col-7 flex-center"><a class="reg-btn-confirm" href="login_as_user.html">REGISTER</a></div>
+        </div>
+    </section>
+</body>
+</html>
