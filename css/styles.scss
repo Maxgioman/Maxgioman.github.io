@@ -1,6 +1,6 @@
 $header-height:75px;
 $header-elem-width:200px;
-$font:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
+$font:Days One, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
 //main page
 * {
   margin: 0;
@@ -119,8 +119,9 @@ footer{
   color: #221a42;
   width: auto;
   text-align: center;
-  font-family: $font;
-  font-size: 20px;
+  font-family: Days One;
+  font-weight: bold;
+  font-size: 22px;
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
@@ -152,7 +153,7 @@ footer{
   align-items: center;
   opacity: 0.75;
   padding: 10px 25px 10px 25px;
-  font-family:$font;
+  font-family: Quicksand;
 }
 
 .auth-btn:hover{
