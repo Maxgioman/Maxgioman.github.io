@@ -43,7 +43,7 @@ body {
 footer {
   background-color: #8c644b;
   height: 300px;
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
+  font-family: Days One, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
   font-size: 17px;
   width: 100%;
   margin: 0;
@@ -98,8 +98,9 @@ footer {
   color: #221a42;
   width: auto;
   text-align: center;
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
-  font-size: 20px;
+  font-family: Days One;
+  font-weight: bold;
+  font-size: 22px;
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: center;
@@ -130,7 +131,7 @@ footer {
   align-items: center;
   opacity: 0.75;
   padding: 10px 25px 10px 25px;
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive; }
+  font-family: Quicksand; }
 
 .auth-btn:hover {
   background-color: white;
