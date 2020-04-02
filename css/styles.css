@@ -202,6 +202,10 @@ footer {
   justify-content: flex-end;
   align-items: center; }
 
+#menu-show {
+  background-color: white;
+  background-image: url("images/menu-link-link.png"); }
+
 .auth-btn {
   margin: 100px;
   font-size: 45px;
