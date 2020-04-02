@@ -34,9 +34,9 @@
   border: 10px #FFFFFF; }
 
 #logo {
+  align-items: center;
   height: 100%;
-  width: auto;
-  margin-left: 10px; }
+  width: auto; }
 
 #section2, #section3 {
   background-color: white; }
