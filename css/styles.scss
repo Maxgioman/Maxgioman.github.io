@@ -1,4 +1,4 @@
-$header-height:75px;
+$header-height:12vh;
 $header-elem-width:200px;
 $font:Days One, TeX Gyre Adventor, URW Gothic L, sans-serif, cursive;
 //main page
@@ -94,6 +94,12 @@ footer{
   margin: 0 auto;
 }
 
+.container2 {
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .background-transparent{
   background-color: transparent;
 }
@@ -132,12 +138,12 @@ footer{
   text-align: center;
   font-family: Days One;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center;     /*Центрирование по вертикали */
-  height: 75px;
+  height: 10vh;
 }
 
 .menu-link:hover{
