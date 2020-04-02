@@ -183,7 +183,8 @@ footer {
   font-weight: bold;
   font-size: 25px;
   padding: 0 10px 0 10px;
-  display: flex;
+  float: right;
+  display: block;
   justify-content: center;
   /*Центрирование по горизонтали*/
   align-items: center;
@@ -913,6 +914,10 @@ label.light {
   .col-xs-12 {
     width: 100%; } }
 @media screen and (max-width: 425px) {
+  .menu-link {
+    float: none;
+    width: 100%; }
+
   #logo_mob {
     align-items: center;
     height: 12px;
