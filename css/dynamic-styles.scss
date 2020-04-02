@@ -1,18 +1,29 @@
 #block1-sec1{
-  background-image: url("images/lestnitsa_arhitektura_zdanie_152333_1920x1080.jpg");
+  background-image: url("images/fon_1.jpg");
 }
 #sec3{
-  background-image: url("images/architecture_structure_symmetry_bw_117554_1920x1080.jpg");
+  background-image: url("images/fon_2.jpg");
 }
+
+#sec4{
+  background-image: url("images/fon_3.jpg");
+}
+
 #text-sec3{
   border: none;
+}
+
+#text2-1{
+  font-size: 35px;
+  color: #FFFFFF;
+  font-family: Quicksand;
 }
 
 .text-sec3-font-size{
   font-size: 25px;
 }
 #sec5-textblock{
-  height: 90%;
+  height: 50%;
   max-width: inherit;
 }
 
@@ -24,8 +35,9 @@
 }
 
 #sec4-text{
-  border: none;
-  height: 80%;
+  height: auto;
+  background-color: #000034;
+  border: 10px #FFFFFF;
 }
 
 #logo{
