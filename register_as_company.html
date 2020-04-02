@@ -43,7 +43,7 @@
                     <legend><span class="number">2</span>Your profile</legend>
 
                     <div class="input-text flex-center">
-                        <p class="text-form text">Name</p>
+                        <p class="text-form text">Company name</p>
                         <input type="text" class="input-field" placeholder="Enter your name">
                     </div>
 
@@ -86,15 +86,39 @@
                     </div>
 
                     <div class="input-text flex-center">
-                        <p class="text-form text">Surname</p>
+                        <p class="text-form text">Description</p>
                         <input type="text" class="input-field" placeholder="Enter your surname">
                     </div>
 
                     <div class="input-select flex-center">
-                        <p class="text-form text">Gender</p>
+                        <p class="text-form text">Specialization</p>
                         <select type="text" class="input-field" name="user-city">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                            <optgroup label="Wood">
+                                <option value="windows">Windows</option>
+                                <option value="doors">Doors</option>
+                                <option value="doorsteps">Doorsteps</option>
+                                <option value="gateways">Gateways</option>
+                                <option value="stairs">Stairs</option>
+                                <option value="furniture">Furniture</option>
+                                <option value="other-wood">Other</option>
+                            </optgroup>
+                            <optgroup label="Metal">
+                                <option value="balcony-railings">Balcony railings</option>
+                                <option value="lattices">Lattices</option>
+                                <option value="keys">Keys</option>
+                                <option value="other-metal">Other</option>
+                            </optgroup>
+                            <optgroup label="Facade">
+                                <option value="walls">Walls</option>
+                                <option value="sculpture">Sculpture</option>
+                                <option value="window-sills">Window sills</option>
+                                <option value="other-facade">Other</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option value="paintings">Paintings</option>
+                                <option value="jewelery">Jewelery</option>
+                                <option value="other-other">Other</option>
+                            </optgroup>
                         </select>
                     </div>
                 </fieldset>
