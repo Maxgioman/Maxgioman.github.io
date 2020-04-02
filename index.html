@@ -5,30 +5,44 @@
     <title>Restavratsia</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/dynamic-styles.css">
+    <link rel="stylesheet" href="css/w3.css">
 </head>
 <body>
-<header class="d-flex-spacebtw">
+<!--<header class="d-flex-spacebtw">
     <div class="col-3 col-3-header">
         <a href="#" ><img class="col-3 col-xl-3" src="css/images/logo_transparent_2.png" id="logo"></a>
     </div>
     <nav class="menu flex-end-center col-9">
-        <ul class="Navigation" >
-            <li><a href="#">MENU</a>
-                <ul style="padding-top: 30px">
-                    <li><a href="#sec2">ABOUT</a></li>
-                    <li><a href="#sec3">WHY WE?</a></li>
-                    <li><a href="#sec4">ABOUT US</a></li>
-                    <li><a href="#sec5">CONTACTS</a></li>
-                </ul>
-            </li>
-
-            <!--<a id="about-button" class="menu-link" href="#sec2">ABOUT</a>
-            <a id="oportunities-button" class="menu-link" href="#sec3">WHY WE?</a>
-            <a id="aboutus-button" class="menu-link" href="#sec4">ABOUT US</a>
-            <a id="devs-button" class="menu-link" href="#sec5">CONTACTS</a>-->
-        </ul>
+        <a id="about-button" class="menu-link" href="#sec2">ABOUT</a>
+        <a id="oportunities-button" class="menu-link" href="#sec3">WHY WE?</a>
+        <a id="aboutus-button" class="menu-link" href="#sec4">ABOUT US</a>
+        <a id="devs-button" class="menu-link" href="#sec5">CONTACTS</a>
     </nav>
-</header>
+</header>-->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+                <a href="#" class="w3-bar-item w3-button">Extras</a>
+                <a href="#" class="w3-bar-item w3-button">Media</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
 <section id="block1-sec1" class="section background-responsive">
     <div class="container col-12 flex-row-center flex-lg-column">
         <div  class="col-6 flex-center">
@@ -148,5 +162,24 @@
         <p class="pt-4">Copyright ©2020 All rights reserved | Website by Maxym Pulyk</p>
     </div>
 </footer>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        let x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    let modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
