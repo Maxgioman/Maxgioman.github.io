@@ -17,7 +17,7 @@ html.scroll-smooth {
 header {
   position: fixed;
   background-color: #76503b;
-  height: 75px;
+  height: 12vh;
   width: 100%;
   margin: 0;
   opacity: 1;
@@ -77,6 +77,11 @@ footer {
   height: 100%;
   margin: 0 auto; }
 
+.container2 {
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto; }
+
 .background-transparent {
   background-color: transparent; }
 
@@ -109,14 +114,14 @@ footer {
   text-align: center;
   font-family: Days One;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: center;
   /*Центрирование по горизонтали*/
   align-items: center;
   /*Центрирование по вертикали */
-  height: 75px; }
+  height: 10vh; }
 
 .menu-link:hover {
   background-color: white;
