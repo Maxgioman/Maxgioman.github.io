@@ -110,6 +110,17 @@ footer{
   width: 100%;
 }
 
+.img4{
+  height: 70%;
+  width: 90%;
+}
+
+.img5{
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
 .width100{
   width: 100%;
 }
@@ -201,6 +212,12 @@ footer{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.flex-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .text-block{
   border: solid lightgrey 1px;
