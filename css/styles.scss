@@ -507,7 +507,6 @@ body.overflow-hidden{
 #logo{
   height: 75px;
   width: 230px;
-  margin-left: 10px;
 }
 #reg-company-div,
 #reg-user-div{
@@ -648,6 +647,7 @@ label.light {
 
 .col-3-header{
   height: 100%;
+  align-items: center;
 }
 
 .col-4{
@@ -1097,6 +1097,11 @@ label.light {
 
 @media screen and (max-width: 425px){
 
+  #logo_mob{
+    align-items: center;
+    height: 12px;
+    width: 540px;
+  }
   .d-flex-spacebt{
     display: flex;
     flex-direction: column;
