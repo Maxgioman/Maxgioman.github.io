@@ -56,7 +56,6 @@
   height: 100%; }
 
 #text-block, #devs-info {
-  border: solid lightgrey 1px;
   border-radius: 10px;
   margin: 5px;
   padding: 25px 10px 25px 10px;
