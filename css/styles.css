@@ -40,6 +40,10 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #a25d5c; }
 
+.header-div {
+  font-family: "Days One";
+  font-size: 25px; }
+
 footer {
   background-color: #8c644b;
   height: 300px;
