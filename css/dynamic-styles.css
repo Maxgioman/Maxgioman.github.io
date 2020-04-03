@@ -141,4 +141,12 @@
   color: black;
   opacity: 1; }
 
+#footer {
+  height: 30vh;
+  margin-top: 10vh; }
+
+@media (max-width: 992px) {
+  #footer {
+    visibility: hidden; } }
+
 /*# sourceMappingURL=dynamic-styles.css.map */
