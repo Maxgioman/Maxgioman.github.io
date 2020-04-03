@@ -145,8 +145,10 @@
   height: 30vh;
   margin-top: 10vh; }
 
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
   #footer {
+    height: 0vh;
+    margin-top: 2px;
     visibility: hidden; } }
 
 /*# sourceMappingURL=dynamic-styles.css.map */
