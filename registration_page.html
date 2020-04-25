@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>Restavratsia</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/w3.css">
 </head>
 <body id="reg-body">
-    <header class="d-flex-spacebtw">
-        <div class="col-3">
-            <a href="index.html"><img class="col-3 col-xl-3" src="css/images/logo_transparent_2.png" id="logo"></a>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card header-div">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">MENU</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+            <a href="login_as_user.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small header-div">LOGIN AS USER</a>
+            <a href="login_as_company.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small header-div">LOGIN AS COMPANY</a>
+            <a id="menu-show" href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
         </div>
-        <nav class="menu flex-end-center col-9" >
-            <a id="home" class="menu-link" href="index.html">HOME</a>
-            <a id="login-as-user-button" class="menu-link" href="login_as_user.html">Login as User</a>
-            <a id="login-as-company-button" class="menu-link" href="login_as_company.html">Login as Company</a>
-        </nav>
-    </header>
+    </div>
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:66px">
+        <a href="login_as_user.html" class="w3-bar-item w3-button w3-padding-large header-div" onclick="myFunction()">LOGIN AS USER</a>
+        <a href="login_as_company.html" class="w3-bar-item w3-button w3-padding-large header-div" onclick="myFunction()">LOGIN AS COMPANY</a>
+    </div>
     <section id="reg-sec1" class="section">
         <div id="out-block-sec1" class="container flex-center background-transparent">
             <div class="form col-9 flex-row-center">
@@ -29,4 +33,23 @@
         </div>
     </section>
 </body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        let x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    let modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </html>
