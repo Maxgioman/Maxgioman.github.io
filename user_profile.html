@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restavratsia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/dynamic-styles.css">
+</head>
+<body id="user-body">
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card header-div"><a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">MENU</a>
+            <a id="go-home" href="index.html" class="w3-bar-item w3-button w3-padding-large" >HOME</a>
+            <a href="login_as_user.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small header-div">LOGIN AS USER</a>
+            <a href="login_as_company.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small header-div">LOGIN AS COMPANY</a>
+            <a id="menu-show" href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
+        </div>
+    </div>
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:66px">
+        <a href="login_as_user.html" class="w3-bar-item w3-button w3-padding-large header-div" onclick="myFunction()">LOGIN AS USER</a>
+        <a href="login_as_company.html" class="w3-bar-item w3-button w3-padding-large header-div" onclick="myFunction()">LOGIN AS COMPANY</a>
+    </div>
+    <section id="user_profile-sec1" class="section">
+        <div id="user-block-sec1" class="container flex-center background-transparent">
+            <a id="showprofile" class="user-choose-flex-col user-choose button-class flex-center">
+                <p class="text-center">Show<br> User <br>Profile</p>
+            </a>
+            <a id="showcustom" class="user-choose-flex-col user-choose button-class flex-center">
+                <p class="text-center">Move<br> to <br>Customs</p>
+            </a>
+        </div>
+    </section>
+    <section id="user_profile" class="section">
+        <!--<a id="user_profile_a" class="button-class flex-center" style="padding-top: 150px">
+            <p class="text-center">Profile</p>
+        </a>
+        <a id="user_profile_back" class="button-class flex-center" >
+                <p class="text-center">Back</p>
+            </a>-->
+        <div id="user_profile_block1" class="container col-9 flex-column">
+            <div id="title" class="flex-column">
+                <p id="welcomeback" class="text-center">Welcome back!</p>
+                <p class="profile-text"><b>Login:</b> login here</p>
+                <p class="profile-text"><b>Name:</b> name here</p>
+                <p class="profile-text"><b>Surname:</b> surname here</p>
+                <p class="profile-text"><b>Email:</b> email here</p>
+                <p class="profile-text"><b>Phone number:</b> phone number here</p>
+                <p class="profile-text"><b>Registration date:</b> date here</p>
+                <p class="profile-text"><b>Created customs:</b> amount here</p>
+                <p class="profile-text"><b>Finished customs:</b> amount here</p>
+            </div>
+            <div class="flex-row-center">
+                <a id="user_profile_change" class="profile-button-class col-4 flex-center" >
+                    <p class="text-center">Change user info</p>
+                </a>
+                <a id="user_profile_back" class="profile-button-class col-4 flex-center" >
+                    <p class="text-center">Back</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="customs" class="section" style="overflow: hidden">
+        <a id="customs_a" class="button-class flex-center" style="padding-top: 150px">
+            <p class="text-center">Customs</p>
+        </a>
+        <a id="customs_back" class="button-class flex-center" style="padding-top: 150px">
+            <p class="text-center">Back</p>
+        </a>
+    </section>
+</body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        let x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    let modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function showProfile() {
+        document.getElementById("user-block-sec1").hidden = true;
+        document.getElementById("showprofile").hidden = true;
+        document.getElementById("showcustom").hidden = true;
+        document.getElementById("user_profile").hidden = false;
+        /*let y = document.getElementById("user_profile-sec1");
+        let yprofile = document.getElementById("user_profile");
+        if (y.className.indexOf("hidden") == -1) {
+            y.className += " hidden";
+            yprofile.className = yprofile.className.replace(" hidden", "")
+        } else {
+            y.className = y.className.replace(" hidden", "");
+            yprofile.className += " hidden";
+        }*/
+    }
+
+    document.getElementById('customs').hidden = true;
+    document.getElementById('user_profile').hidden = true;
+
+    document.getElementById('showcustom').onclick = function() {
+        document.getElementById('customs').hidden = false;
+        document.getElementById('user_profile-sec1').hidden = true;
+        document.getElementById('user_profile').hidden = true;
+
+    }
+
+    document.getElementById('showprofile').onclick = function() {
+        document.getElementById('user_profile').hidden = false;
+        document.getElementById('user_profile-sec1').hidden = true;
+        document.getElementById('customs').hidden = true;
+    }
+
+    document.getElementById('go-home').onclick = function() {
+        document.getElementById('user_profile').hidden = true;
+        document.getElementById('user_profile-sec1').hidden = false;
+        document.getElementById('customs').hidden = true;
+    }
+
+    document.getElementById('user_profile_back').onclick = function() {
+        document.getElementById('user_profile').hidden = true;
+        document.getElementById('user_profile-sec1').hidden = false;
+        document.getElementById('customs').hidden = true;
+    }
+
+    document.getElementById('user_profile_change').onclick = function() {
+        confirm("Do you really want to change information?");
+    }
+
+    document.getElementById('customs_back').onclick = function() {
+        document.getElementById('user_profile').hidden = true;
+        document.getElementById('user_profile-sec1').hidden = false;
+        document.getElementById('customs').hidden = true;
+    }
+</script>
+</html>
